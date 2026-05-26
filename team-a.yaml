@@ -7,7 +7,7 @@ spec:
   destination:
     namespace: argocd
     server: https://kubernetes.default.svc
-  project: my-first-webserver
+  project: first-gitops-project
   source:
     path: .
     repoURL: https://github.com/LilithPandragon/my-team-repo
