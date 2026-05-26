@@ -1,14 +1,14 @@
 apiVersion: argoproj.io/v1alpha1
 kind: AppProject
 metadata:
-  name: my-first-webserver
+  creationTimestamp: "2026-05-26T15:10:00Z"
+  generation: 2
+  name: first-gitops-project
   namespace: argocd
+  resourceVersion: "75625"
+  uid: ac9bfdcf-6a73-4602-b204-9cd559947250
 spec:
-  sourceRepos:
-    - '*'
-  destinations:
-    - namespace: '*'
-      server: '*'
-  clusterResourceWhitelist:
-    - group: '*'
-      kind: '*'
+  namespaceResourceWhitelist:
+  - group: apps
+    kind: Deployment
+status: {}
